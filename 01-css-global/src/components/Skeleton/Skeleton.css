@@ -1,0 +1,70 @@
+/* 01-css-global/src/components/Skeleton/Skeleton.css */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(to right, var(--color-skeleton-base) 8%, var(--color-skeleton-highlight) 18%, var(--color-skeleton-base) 33%);
+  background-size: 2000px 100%;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+}
+
+.skeleton-content {
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  flex-grow: 1;
+}
+
+.skeleton-text {
+  height: 1.25em;
+  width: 100%;
+}
+
+.skeleton-text--short {
+  width: 60%;
+}
+
+.skeleton-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-2);
+}
+
+.skeleton-text--price {
+  width: 30%;
+  height: 1.5em;
+}
+
+.skeleton-text--rating {
+  width: 20%;
+}
+
+.skeleton-button {
+  height: 40px;
+  width: 100%;
+}

@@ -1,0 +1,49 @@
+/* 01-css-global/src/tokens.css */
+:root {
+  /* Colors */
+  --color-background: #f9fafb;
+  --color-surface: #ffffff;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-text: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-star: #f59e0b;
+  --color-tag-new-bg: #10b981;
+  --color-tag-promo-bg: #ef4444;
+  --color-tag-text: #ffffff;
+  --color-skeleton-base: #e5e7eb;
+  --color-skeleton-highlight: #f9fafb;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+
+  /* Border Radius */
+  --radius-md: 0.375rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+:root.dark {
+  /* Colors */
+  --color-background: #111827;
+  --color-surface: #1f2937;
+  --color-primary: #60a5fa;
+  --color-primary-hover: #3b82f6;
+  --color-primary-text: #111827;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-border: #374151;
+  --color-skeleton-base: #374151;
+  --color-skeleton-highlight: #4b5563;
+
+  /* Shadows */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+}

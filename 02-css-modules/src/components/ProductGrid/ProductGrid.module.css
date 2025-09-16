@@ -1,0 +1,24 @@
+/* 02-css-modules/src/components/ProductGrid/ProductGrid.module.css */
+.productGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 481px) {
+.productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+.productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+.productGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

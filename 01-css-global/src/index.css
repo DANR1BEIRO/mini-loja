@@ -1,0 +1,25 @@
+@import url('./tokens.css');
+@import url('./components/Navbar/Navbar.css');
+@import url('./components/ProductGrid/ProductGrid.css');
+@import url('./components/ProductCard/ProductCard.css');
+@import url('./components/Button/Button.css');
+@import url('./components/Skeleton/Skeleton.css');
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+  transition: background-color 200ms, color 200ms;
+  margin: 0;
+  padding-top: 80px;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

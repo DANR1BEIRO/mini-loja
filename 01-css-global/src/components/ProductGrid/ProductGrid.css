@@ -1,0 +1,27 @@
+/* 01-css-global/src/components/ProductGrid/ProductGrid.css */
+.product-grid {
+  display: grid;
+  gap: var(--spacing-4);
+  grid-template-columns: 1fr; /* ≤480px: 1 col */
+}
+
+/* 481–768px: 2 cols */
+@media (min-width: 481px) {
+.product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 769–1024px: 3 cols */
+@media (min-width: 769px) {
+.product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ≥1025px: 4 cols */
+@media (min-width: 1025px) {
+.product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
